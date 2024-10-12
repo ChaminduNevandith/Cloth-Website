@@ -99,7 +99,7 @@ function Sidepanel() {
             {/* Category 1 */}
             <li className="mb-2">
               <div className="flex justify-between items-center p-2" onClick={toggleCategory1}>
-                <span className="text-[16px] font-semibold ">Category</span>
+                <span className="text-[16px] font-semibold ">CATEGORY</span>
                 {category1Open ? <ExpandLessIcon /> : <ExpandMoreIcon />}
               </div>
               <hr />
@@ -107,79 +107,79 @@ function Sidepanel() {
                <ul class="ml-4 mt-2 text-[12px] font-normal">
                <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
                  <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
-                 <a href="#" class="inline-block w-full">50% off</a>
+                 <a href="/50-off" class="inline-block w-full">50% off</a>
                </li>
                <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
                  <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
-                 <a href="#" class="inline-block w-full">Athleisure</a>
+                 <a href="/Essential" class="inline-block w-full">Athleisure</a>
                </li>
                <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
                  <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
-                 <a href="#" class="inline-block w-full">Best Sellers</a>
+                 <a href="/Evening" class="inline-block w-full">Best Sellers</a>
                </li>
                <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
                  <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
-                 <a href="#" class="inline-block w-full">Cargo</a>
+                 <a href="/Over" class="inline-block w-full">Cargo</a>
                </li>
                <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
                  <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
-                 <a href="#" class="inline-block w-full">Casual</a>
+                 <a href="/casual" class="inline-block w-full">Casual</a>
                </li>
                <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
                  <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
-                 <a href="#" class="inline-block w-full">Crop Tops</a>
+                 <a href="/crop" class="inline-block w-full">Crop Tops</a>
                </li>
                <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
                  <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
-                 <a href="#" class="inline-block w-full">Denims</a>
+                 <a href="/denim" class="inline-block w-full">Denims</a>
                </li>
                <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
                  <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
-                 <a href="#" class="inline-block w-full">Dresses</a>
+                 <a href="/Dress" class="inline-block w-full">Dresses</a>
                </li>
                <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
                  <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
-                 <a href="#" class="inline-block w-full">Essentials</a>
+                 <a href="/Essential" class="inline-block w-full">Essentials</a>
                </li>
                <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
                  <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
-                 <a href="#" class="inline-block w-full">Evening Wear</a>
+                 <a href="/Evening" class="inline-block w-full">Evening Wear</a>
                </li>
                <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
                  <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
-                 <a href="#" class="inline-block w-full">Footwear</a>
+                 <a href="/workwear" class="inline-block w-full">Footwear</a>
                </li>
                <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
                  <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
-                 <a href="#" class="inline-block w-full">Gift Vouchers</a>
+                 <a href="/angel-club" class="inline-block w-full">Gift Vouchers</a>
                </li>
                <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
                  <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
-                 <a href="#" class="inline-block w-full">Jumpsuits</a>
+                 <a href="/Dress" class="inline-block w-full">Jumpsuits</a>
                </li>
                <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
                  <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
-                 <a href="#" class="inline-block w-full">Kelly Felder</a>
+                 <a href="/Kelly" class="inline-block w-full">Kelly Felder</a>
                </li>
                <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
                  <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
-                 <a href="#" class="inline-block w-full">Leggings</a>
+                 <a href="/denim" class="inline-block w-full">Leggings</a>
                </li>
                <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
                  <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
-                 <a href="#" class="inline-block w-full">Men</a>
+                 <a href="/shop-men" class="inline-block w-full">Men</a>
                </li>
                <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out underline">
                  <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
-                 <a href="#" class="inline-block w-full">NEW ARRIVALS</a>
+                 <a href="/new-arrivals" class="inline-block w-full">NEW ARRIVALS</a>
                </li>
                <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
                  <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
-                 <a href="#" class="inline-block w-full">Oversized T-Shirts</a>
+                 <a href="/over" class="inline-block w-full">Oversized T-Shirts</a>
                </li>
                <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
                  <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
-                 <a href="#" class="inline-block w-full">Pants</a>
+                 <a href="/denim" class="inline-block w-full">Pants</a>
                </li>
              </ul>
              
@@ -207,7 +207,7 @@ function Sidepanel() {
             {/* Availability */}
             <li className="mb-2">
               <div className="flex justify-between items-center p-2" onClick={toggleAvaliability}>
-                <span className="text-[16px] font-semibold">Availability</span>
+                <span className="text-[16px] font-semibold">AVAILABILITY</span>
                 {avaliabilityOpen ? <ExpandLessIcon /> : <ExpandMoreIcon />}
               </div>
               <hr />
@@ -240,7 +240,7 @@ function Sidepanel() {
             {/* Price Range */}
             <li className="mb-2">
               <div className="flex justify-between items-center p-2 rounded cursor-pointer" onClick={togglePrice}>
-                <span className="text-[16px] font-semibold">Price</span>
+                <span className="text-[16px] font-semibold">PRICE</span>
                 {priceOpen ? <ExpandLessIcon /> : <ExpandMoreIcon />}
               </div>
               <hr />
@@ -304,7 +304,7 @@ function Sidepanel() {
             {/* Color */}
             <li className="mb-2">
               <div className="flex justify-between items-center p-2" onClick={togglecolor}>
-                <span className="text-[16px] font-semibold">Color</span>
+                <span className="text-[16px] font-semibold">COLOR</span>
                 {colorOpen ? <ExpandLessIcon /> : <ExpandMoreIcon />}
               </div>
               <hr />
