@@ -33,6 +33,7 @@ import Dress from './Pages/Dress/Dress';
 import SignInRightsidePanel from './Components/SignInRightsidePanel/SignInRightsidePanel';
 import Cart from './Pages/Cart/Cart';
 import CheckOutPage from './Pages/CheckOutPage/CheckOutPage';
+import ProductPage from './Pages/ProductPage/ProductPage';
 
 
 
@@ -72,6 +73,7 @@ function App() {
           <Route path="/SignInRightsidePanel" element={<SignInRightsidePanel />} />
           <Route path="/Cart" element={<Cart />} />
           <Route path="/CheckOutPage" element={<CheckOutPage />} />
+          <Route path="/ProductPage" element={<ProductPage />} />
         
         </Routes>
         <SideButton />

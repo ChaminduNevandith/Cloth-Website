@@ -23,7 +23,6 @@ function Header() {
     };
 
     const handleBlur = () => {
-        // Delay closing to prevent immediate closing when switching between input and panel
         setTimeout(() => setSearchOpen(false), 200);
     };
 

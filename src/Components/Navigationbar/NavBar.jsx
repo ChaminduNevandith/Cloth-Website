@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { NavLink } from 'react-router-dom'; // Import NavLink
 import CallIcon from '@mui/icons-material/Call';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
@@ -8,10 +8,13 @@ import img1 from '../../assets/Kelly-Felder.jpg'
 import { IoBagOutline } from "react-icons/io5";
 import { CiSearch } from "react-icons/ci";
 import ShoppingCart from './ShoppingCart';
+import SearchPannel from '../SearchPannel/SearchPannel';
 
 function NavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isCartOpen, setIsCartOpen] = useState(false); // State to control cart panel
+  const [isCartOpen, setIsCartOpen] = useState(false); 
+  const [isSearchPanelOpen, setIsSearchPanelOpen] = useState(false);
+  const searchPanelRef = useRef(null); // Create a ref for the search panel
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -21,6 +24,24 @@ function NavBar() {
     setIsCartOpen(!isCartOpen); // Toggle cart panel visibility
   };
 
+  const toggleSearchPanel = () => setIsSearchPanelOpen(!isSearchPanelOpen);
+
+  // Close the search panel when clicking outside of it
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (searchPanelRef.current && !searchPanelRef.current.contains(event.target)) {
+        setIsSearchPanelOpen(false); // Close the search panel
+      }
+    };
+
+    // Bind the event listener
+    document.addEventListener('mousedown', handleClickOutside);
+    
+    // Clean up the event listener on unmount
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [searchPanelRef]);
 
   return (
     <nav className="bg-white">
@@ -57,44 +78,41 @@ function NavBar() {
         </NavLink>
       </div>
       <div className="container flex items-center justify-between mx-auto ">
+        <div className="flex items-center justify-between px-4 py-2 md:hidden">
+          <button onClick={toggleMobileMenu} className="mr-4 text-black focus:outline-none">
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
 
-            <div className="flex items-center justify-between px-4 py-2 md:hidden">
-         
-                <button onClick={toggleMobileMenu} className="mr-4 text-black focus:outline-none">
-                    <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M4 6h16M4 12h16m-7 6h7"
-                    ></path>
-                    </svg>
-                </button>
+          <button onClick={toggleSearchPanel} className="ml-4 text-black">
+            <CiSearch className="w-6 h-6" />
+          </button>
 
-                <button className="ml-4 text-black">
-                    <CiSearch className="w-6 h-6" />
-                </button>
-              
-                <a href="/" className="flex items-center mx-16">
-                    <img src={img1} alt="Logo" className="w-auto h-10" />
-                </a>
+          <a href="/" className="flex items-center mx-16">
+            <img src={img1} alt="Logo" className="w-auto h-10" />
+          </a>
 
-                <button className="ml-4 text-black">
-                    <CgProfile className="w-6 h-6" />
-                </button>
+          <button className="ml-4 text-black">
+            <CgProfile className="w-6 h-6" />
+          </button>
 
-                 <button onClick={toggleCart} className="ml-4 text-black"> {/* Toggle cart panel on click */}
+          <button onClick={toggleCart} className="ml-4 text-black">
             <IoBagOutline className="w-6 h-6" />
           </button>
-            </div>
-
         </div>
+      </div>
 
       {isMobileMenuOpen && (
         <div className="md:hidden ">
@@ -147,7 +165,15 @@ function NavBar() {
           </NavLink>
         </div>
       )}
-       <ShoppingCart isOpen={isCartOpen} onClose={toggleCart} /> {/* Pass props to control cart */}
+
+      <ShoppingCart isOpen={isCartOpen} onClose={toggleCart} /> {/* Pass props to control cart */}
+
+      {/* Conditionally Render SearchPannel */}
+      {isSearchPanelOpen && (
+        <div ref={searchPanelRef}> {/* Attach the ref here */}
+          <SearchPannel />
+        </div>
+      )}
     </nav>
   );
 }

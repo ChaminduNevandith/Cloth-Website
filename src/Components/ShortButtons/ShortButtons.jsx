@@ -85,7 +85,7 @@ function ShortButtons() {
       <div className="hidden sm:flex items-center space-x-4">
         {/* Items Per Page */}
         <div className="flex items-center space-x-2">
-          <span className="text-sm font-medium">ITEMS PER PAGE</span>
+          <span className="text-[12px] font-medium">ITEMS PER PAGE</span>
           <Select
             value={itemsPerPage}
             onChange={(e) => setItemsPerPage(e.target.value)}
@@ -101,7 +101,7 @@ function ShortButtons() {
 
         {/* Sort By */}
         <div className="flex items-center space-x-2">
-          <span className="text-sm font-medium">SORT BY</span>
+          <span className="text-[12px] font-medium ">SORT BY</span>
           <Select
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value)}

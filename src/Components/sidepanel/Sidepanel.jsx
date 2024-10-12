@@ -104,10 +104,86 @@ function Sidepanel() {
               </div>
               <hr />
               {category1Open && (
-                <ul className="ml-4 mt-2 text-[12px] font-normal">
-                  <li className='mb-2 p-2 rounded'>50% off</li>
-                  <li className='mb-2 p-2 rounded'>Athleisure</li>
-                </ul>
+               <ul class="ml-4 mt-2 text-[12px] font-normal">
+               <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
+                 <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
+                 <a href="#" class="inline-block w-full">50% off</a>
+               </li>
+               <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
+                 <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
+                 <a href="#" class="inline-block w-full">Athleisure</a>
+               </li>
+               <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
+                 <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
+                 <a href="#" class="inline-block w-full">Best Sellers</a>
+               </li>
+               <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
+                 <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
+                 <a href="#" class="inline-block w-full">Cargo</a>
+               </li>
+               <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
+                 <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
+                 <a href="#" class="inline-block w-full">Casual</a>
+               </li>
+               <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
+                 <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
+                 <a href="#" class="inline-block w-full">Crop Tops</a>
+               </li>
+               <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
+                 <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
+                 <a href="#" class="inline-block w-full">Denims</a>
+               </li>
+               <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
+                 <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
+                 <a href="#" class="inline-block w-full">Dresses</a>
+               </li>
+               <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
+                 <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
+                 <a href="#" class="inline-block w-full">Essentials</a>
+               </li>
+               <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
+                 <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
+                 <a href="#" class="inline-block w-full">Evening Wear</a>
+               </li>
+               <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
+                 <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
+                 <a href="#" class="inline-block w-full">Footwear</a>
+               </li>
+               <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
+                 <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
+                 <a href="#" class="inline-block w-full">Gift Vouchers</a>
+               </li>
+               <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
+                 <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
+                 <a href="#" class="inline-block w-full">Jumpsuits</a>
+               </li>
+               <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
+                 <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
+                 <a href="#" class="inline-block w-full">Kelly Felder</a>
+               </li>
+               <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
+                 <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
+                 <a href="#" class="inline-block w-full">Leggings</a>
+               </li>
+               <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
+                 <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
+                 <a href="#" class="inline-block w-full">Men</a>
+               </li>
+               <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out underline">
+                 <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
+                 <a href="#" class="inline-block w-full">NEW ARRIVALS</a>
+               </li>
+               <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
+                 <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
+                 <a href="#" class="inline-block w-full">Oversized T-Shirts</a>
+               </li>
+               <li class="group relative mb-2 p-2 rounded hover:pl-4 transition-all duration-300 ease-in-out">
+                 <span class="absolute left-0 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:left-[-10px]">›</span>
+                 <a href="#" class="inline-block w-full">Pants</a>
+               </li>
+             </ul>
+             
+              
               )}
             </li>
 
@@ -145,6 +221,16 @@ function Sidepanel() {
                     />
                     <label htmlFor="in-stock-checkbox" className="ms-2 text-[12px] font-normal text-[#232323]">
                       In Stock(161)
+                    </label>
+                  </div>
+                  <div className="flex items-center mb-4">
+                    <input
+                      id="in-stock-checkbox"
+                      type="checkbox"
+                      className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded"
+                    />
+                    <label htmlFor="in-stock-checkbox" className="ms-2 text-[12px] font-normal text-[#232323]">
+                      Out OfStock(161)
                     </label>
                   </div>
                 </ul>
@@ -224,10 +310,15 @@ function Sidepanel() {
               <hr />
               {colorOpen && (
                 <ul className="ml-4 mt-2">
-                  <div className="grid grid-cols-3 gap-2">
-                    <button className="border border-gray-300 p-2 rounded-full w-10 h-10"></button>
-                    <button className="border bg-orange-400 p-2 rounded-full w-10 h-10"></button>
-                    <button className="border bg-blue-400 p-2 rounded-full w-10 h-10"></button>
+                  <div className="grid grid-cols-4 gap-2">
+                    <button className="border bg-gray-900 p-2 rounded-full w-10 h-10"></button>
+                    <button className="border bg-black p-2 rounded-full w-10 h-10"></button>
+                    <button className="border bg-red-400 p-2 rounded-full w-10 h-10"></button>
+                    <button className="border bg-gray-300 p-2 rounded-full w-10 h-10"></button>
+                    <button className="border bg-purple-400 p-2 rounded-full w-10 h-10"></button>
+                    <button className="border bg-green-400 p-2 rounded-full w-10 h-10"></button><button className="border border-gray-300 p-2 rounded-full w-10 h-10"></button>
+                    <button className="border bg-yellow-400 p-2 rounded-full w-10 h-10"></button>
+                   
                   </div>
                 </ul>
               )}

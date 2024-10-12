@@ -8,7 +8,7 @@ function CheckOutPage() {
       <div className="flex-1 mr-4 w-full md:w-[900px]">
         <AddDetails />
       </div>
-      <div className="flex-1 bg-[#F5F5F5] w-full">
+      <div className="flex-1 bg-[#F5F5F5] w-full border ">
         <CheckOutCart />
       </div>
     </div>

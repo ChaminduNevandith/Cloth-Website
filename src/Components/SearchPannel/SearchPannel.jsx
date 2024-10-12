@@ -5,7 +5,17 @@ import productImage3 from "../../assets/sa2.jpg";
 
 function SearchPannel() {
   return (
-    <div className="absolute right-0 top-12 w-[500px] bg-white shadow-lg p-6 rounded-sm z-50">
+    <div className="absolute right-0 top-12 w-full sm:w-[500px] bg-white shadow-lg p-6 rounded-sm z-50 sm:right-0 sm:left-auto sm:top-12 sm:p-6 transition-all">
+      
+      {/* Search input - Mobile only */}
+      <div className="block sm:hidden mb-6">
+        <input
+          type="text"
+          placeholder="Search..."
+          className="w-full p-2 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+      </div>
+
       {/* Trending Now Section */}
       <div className="mb-6">
         <h3 className="font-bold text-lg mb-3">Trending Now</h3>

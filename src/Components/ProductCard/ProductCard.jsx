@@ -47,13 +47,16 @@ const ProductCard = ({ image, hoverImage, brand, description, price, colors, isN
         </div>
 
         {/* Quick Add Button inside the image area */}
-        <button
-            className={`absolute bottom-0 left-0 w-full md:w-[231px] py-2 text-black font-bold border border-black bg-white transition-all duration-1000 transform ${
-              cardHovered ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-            } hover:bg-black hover:text-white`}
-          >
-            QUICK ADD
-        </button>
+        <a href="/ProductPage">
+  <button
+    className={`absolute bottom-0 left-0 w-full md:w-[231px] py-2 text-black font-bold border border-black bg-white transition-all duration-1000 transform ${
+      cardHovered ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+    } hover:bg-black hover:text-white`}
+  >
+    QUICK ADD
+  </button>
+</a>
+
 
       </div>
 
