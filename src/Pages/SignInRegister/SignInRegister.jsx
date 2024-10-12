@@ -26,7 +26,6 @@ const SignInRegister = () => {
               <input
                 type="password"
                 className="w-full max-w-lg px-4 py-2 border rounded-sm mb-4"
-               
               />
 
               {/* Button and Lost Password in a Row */}
@@ -44,19 +43,23 @@ const SignInRegister = () => {
           {/* Register Section */}
           <div className="bg-gray-50 p-6 rounded-sm max-w-5xl">
             <h2 className="text-[14px] font-semibold mb-4">Register</h2>
-            <p className="mb-4 text-[12px] text-[#232323]">Please register below to create an account</p>
+            <p className="mb-4 text-[12px] text-[#232323]">
+              Please register below to create an account
+            </p>
             <form>
-              <label className="block mb-2 text-[12px] text-[#232323] font-medium">First Name</label>
+              <label className="block mb-2 text-[12px] text-[#232323] font-medium">
+                First Name
+              </label>
               <input
                 type="text"
                 className="w-full max-w-lg px-4 py-2 border rounded-sm mb-4"
-             
               />
-              <label className="block mb-2 text-[12px] text-[#232323] font-medium">Last Name</label>
+              <label className="block mb-2 text-[12px] text-[#232323] font-medium">
+                Last Name
+              </label>
               <input
                 type="text"
                 className="w-full max-w-lg px-4 py-2 border rounded-sm mb-4"
-             
               />
               <label className="block mb-2 text-[12px] text-[#232323] font-medium">
                 Your Email Address<span className="text-red-500">*</span>
@@ -64,7 +67,6 @@ const SignInRegister = () => {
               <input
                 type="email"
                 className="w-full max-w-lg px-4 py-2 border rounded-sm mb-4"
-               
               />
               <label className="block mb-2 text-[12px] text-[#232323] font-medium">
                 Your Password<span className="text-red-500">*</span>
@@ -72,7 +74,6 @@ const SignInRegister = () => {
               <input
                 type="password"
                 className="w-full max-w-lg px-4 py-2 border rounded-sm mb-4"
-               
               />
               <button className="w-full bg-black text-white font-bold text-[14px] py-2 rounded-sm">
                 CREATE AN ACCOUNT

@@ -7,7 +7,6 @@ function ContactForm() {
     email: "",
     number: "",
     message: "",
-    
   });
   const [response, setResponse] = useState(null);
 
@@ -41,7 +40,10 @@ function ContactForm() {
       >
         <h2 className="mb-6 text-2xl font-bold text-center">Contact Us</h2>
         <div className="mb-4">
-          <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="name">
+          <label
+            className="block mb-2 text-sm font-bold text-gray-700"
+            htmlFor="name"
+          >
             Name
           </label>
           <input
@@ -55,7 +57,10 @@ function ContactForm() {
           />
         </div>
         <div className="mb-4">
-          <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="email">
+          <label
+            className="block mb-2 text-sm font-bold text-gray-700"
+            htmlFor="email"
+          >
             Email
           </label>
           <input
@@ -69,7 +74,10 @@ function ContactForm() {
           />
         </div>
         <div className="mb-4">
-          <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="number">
+          <label
+            className="block mb-2 text-sm font-bold text-gray-700"
+            htmlFor="number"
+          >
             Phone Number
           </label>
           <input
@@ -84,7 +92,10 @@ function ContactForm() {
         </div>
 
         <div className="mb-4">
-          <label className="block mb-2 text-sm font-bold text-gray-700" htmlFor="message">
+          <label
+            className="block mb-2 text-sm font-bold text-gray-700"
+            htmlFor="message"
+          >
             Comment
           </label>
           <textarea
@@ -110,4 +121,4 @@ function ContactForm() {
     </div>
   );
 }
-export default ContactForm
+export default ContactForm;

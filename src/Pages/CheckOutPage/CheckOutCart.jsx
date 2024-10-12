@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import productImage15 from "../../assets/cr8.jpg"; // Your first image path
 import productImage16 from "../../assets/cr88.jpg"; // Your second image path
 
@@ -9,7 +9,11 @@ function CheckOutCart() {
 
       <div className="flex items-center justify-between py-4 border-b">
         <div className="flex items-center">
-          <img src={productImage15} alt="Rogue Legacy" className="w-16 h-16 object-cover rounded-md" />
+          <img
+            src={productImage15}
+            alt="Rogue Legacy"
+            className="w-16 h-16 object-cover rounded-md"
+          />
           <div className="ml-4">
             <p className="font-medium">Rogue Legacy</p>
             <p className="text-sm text-gray-500">Black / XS</p>
@@ -20,7 +24,11 @@ function CheckOutCart() {
 
       <div className="flex items-center justify-between py-4 border-b">
         <div className="flex items-center">
-          <img src={productImage16} alt="Serene silhouette midi dress" className="w-16 h-16 object-cover rounded-md" />
+          <img
+            src={productImage16}
+            alt="Serene silhouette midi dress"
+            className="w-16 h-16 object-cover rounded-md"
+          />
           <div className="ml-4">
             <p className="font-medium">Serene silhouette midi dress</p>
             <p className="text-sm text-gray-500">Green / UK 4</p>
@@ -32,8 +40,14 @@ function CheckOutCart() {
       <div className="py-4 border-b">
         <label className="block mb-2 font-medium">Discount code</label>
         <div className="flex">
-          <input type="text" className="border rounded-l-md px-3 py-2 w-full focus:outline-none" placeholder="Enter code" />
-          <button className="bg-gray-800 text-white rounded-r-md px-4">Apply</button>
+          <input
+            type="text"
+            className="border rounded-l-md px-3 py-2 w-full focus:outline-none"
+            placeholder="Enter code"
+          />
+          <button className="bg-gray-800 text-white rounded-r-md px-4">
+            Apply
+          </button>
         </div>
       </div>
 

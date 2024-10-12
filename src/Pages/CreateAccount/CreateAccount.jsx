@@ -2,11 +2,12 @@ import React from "react";
 
 const CreateAccount = () => {
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-white"> 
-      <div className="container mx-auto max-w-lg  p-8"> 
-        <h1 className="text-3xl font-bold text-center mb-[4]">Create Account</h1>
+    <div className="min-h-screen w-full flex items-center justify-center bg-white">
+      <div className="container mx-auto max-w-lg  p-8">
+        <h1 className="text-3xl font-bold text-center mb-[4]">
+          Create Account
+        </h1>
         <div>
-
           <p className="mb-6 text-[14px] text-[#232323] text-center">
             Please fill in the details below to create an account
           </p>
@@ -41,13 +42,15 @@ const CreateAccount = () => {
             />
 
             <div className="flex items-center space-x-2">
-                <input type="checkbox" id="subscribe" className="w-4 h-4" />
-                <label htmlFor="subscribe" className="text-sm text-[#232323]">
-                    Subscribe To Email Marketing
-                </label>
-                </div>
+              <input type="checkbox" id="subscribe" className="w-4 h-4" />
+              <label htmlFor="subscribe" className="text-sm text-[#232323]">
+                Subscribe To Email Marketing
+              </label>
+            </div>
 
-            <div className=" mt-6"> {/* Centered the button */}
+            <div className=" mt-6">
+              {" "}
+              {/* Centered the button */}
               <button className="bg-black text-white font-bold text-[16px] py-3 px-8 rounded-sm">
                 CREATE AN ACCOUNT
               </button>
