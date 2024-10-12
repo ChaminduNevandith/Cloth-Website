@@ -32,6 +32,7 @@ import Crop from './Pages/Crop/Crop';
 import Dress from './Pages/Dress/Dress';
 import SignInRightsidePanel from './Components/SignInRightsidePanel/SignInRightsidePanel';
 import Cart from './Pages/Cart/Cart';
+import CheckOutPage from './Pages/CheckOutPage/CheckOutPage';
 
 
 
@@ -70,6 +71,7 @@ function App() {
           <Route path="/Dress" element={<Dress />} />
           <Route path="/SignInRightsidePanel" element={<SignInRightsidePanel />} />
           <Route path="/Cart" element={<Cart />} />
+          <Route path="/CheckOutPage" element={<CheckOutPage />} />
         
         </Routes>
         <SideButton />

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 
+
 function CartSummary() {
   // State to manage sidebar visibility for both icons
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -65,7 +66,7 @@ function CartSummary() {
       {/* Checkout and View Cart Buttons */}
       <div>
         {/* Checkout Button */}
-        <a href="/Cart">
+        <a href="/CheckOutPage">
         <button
           className="w-full mb-2 text-white bg-black hover:bg-gray-900 font-bold py-3"
           style={{ padding: '12px 0' }}
@@ -75,14 +76,17 @@ function CartSummary() {
         </a>
 
         {/* View Cart Button */}
+        <a href="/Cart">
         <button
           className="w-full text-black border border-black font-bold py-3 hover:bg-gray-100"
           style={{ padding: '12px 0' }}
         >
           VIEW CART
         </button>
-      </div>
+        </a>
 
+      </div>
+    
       {/* Sidebar for Instructions */}
       {isSidebarOpen && (
         <div className={`fixed right-0 bottom-0 bg-white p-6 h-[400px] w-[350px] lg:w-[410px] shadow-lg transition-transform transform ${isSidebarOpen ? 'translate-y-0' : 'translate-y-full'}`}>
