@@ -20,6 +20,8 @@ import productImage15 from "../../assets/wo8.webp";
 import productImage16 from "../../assets/wo88.webp";
 // ... other imports for product images
 import Recently from "../../Components/RecentlyProducts/Recently";
+import ShortButtons from "../../Components/ShortButtons/ShortButtons";
+import Pagination from "../../Components/Pagination/Pagination";
 
 const products = [
   {
@@ -143,6 +145,9 @@ const WorkWear = () => {
         <div className="flex-grow">
           <p className="mt-10 text-2xl font-bold">Workwear</p>
           <hr className="block my-4 mb-10 border-gray-600 md:mb-0 " />
+          <div className="mt-4">
+          <ShortButtons/>
+          </div>
           <br />
           <br />
 
@@ -162,6 +167,9 @@ const WorkWear = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div>
+        <Pagination/>
       </div>
       <Recently/>
  

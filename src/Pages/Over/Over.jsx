@@ -19,6 +19,8 @@ import productImage15 from "../../assets/ov4.webp";
 import productImage16 from "../../assets/ov44.jpg";
 // ... other imports for product images
 import Recently from "../../Components/RecentlyProducts/Recently";
+import ShortButtons from "../../Components/ShortButtons/ShortButtons";
+import Pagination from "../../Components/Pagination/Pagination";
 
 const products = [
   {
@@ -142,6 +144,9 @@ const Over = () => {
         <div className="flex-grow">
           <p className="mt-10 text-2xl font-bold">Oversized T-Shirts</p>
           <hr className="block my-4 mb-10 border-gray-600 md:mb-0 " />
+          <div className="mt-4">
+          <ShortButtons/>
+          </div>
           <br />
           <br />
 
@@ -161,6 +166,9 @@ const Over = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div>
+        <Pagination/>
       </div>
       <Recently/>
  

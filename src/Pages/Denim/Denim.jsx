@@ -20,6 +20,8 @@ import productImage16 from "../../assets/de88.jpg";
 import productImage17 from "../../assets/kelly25.webp";
 // ... other imports for product images
 import Recently from "../../Components/RecentlyProducts/Recently";
+import ShortButtons from "../../Components/ShortButtons/ShortButtons";
+import Pagination from "../../Components/Pagination/Pagination";
 
 const products = [
   {
@@ -145,6 +147,9 @@ const Denim = () => {
           </div>
           <p className="mt-10 text-2xl font-bold">Denim</p>
           <hr className="block my-4 mb-10 border-gray-600 md:mb-0 " />
+          <div className="mt-4">
+          <ShortButtons/>
+          </div>
           <br />
           <br />
 
@@ -164,6 +169,9 @@ const Denim = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div>
+        <Pagination/>
       </div>
       <Recently/>
     </section>

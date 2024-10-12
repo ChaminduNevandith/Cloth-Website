@@ -73,10 +73,10 @@ function Sidepanel() {
     <div>
       {/* Filter Button for small screens */}
       <button
-        className="lg:hidden bg-[#7A3E9D] text-white p-2 rounded mb-4"
+        className="lg:hidden bg-white border border-black text-black hover:bg-black hover:text-white w-[130px] h-[30px] rounded-sm"
         onClick={() => setIsSidebarOpen(!isSidebarOpen)}
       >
-        {isSidebarOpen ? 'Close Filters' : 'Open Filters'}
+        {isSidebarOpen ? 'Close Filters' : 'Open Filters +'}
       </button>
 
       {/* Sidebar */}
@@ -89,10 +89,10 @@ function Sidepanel() {
         <div className="p-4 relative">
           {/* Close Button for mobile */}
           <button
-            className="lg:hidden absolute top-2 right-2 bg-[#7A3E9D] text-white p-2 rounded"
+            className="lg:hidden absolute top-2 right-2 bg-white text-black p-2 rounded"
             onClick={() => setIsSidebarOpen(false)}
           >
-            Close
+           ✖
           </button>
 
           <ul>

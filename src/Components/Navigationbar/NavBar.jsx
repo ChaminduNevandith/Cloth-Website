@@ -43,7 +43,7 @@ function NavBar() {
         <NavLink to="/denim" className="px-3 py-2 text-sm font-bold text-white rounded hover:underline" activeClassName="underline">
           DENIM
         </NavLink>
-        <NavLink to="/scylla-zelus" className="px-3 py-2 text-sm font-bold text-white rounded hover:underline" activeClassName="underline">
+        <NavLink to="/scylla" className="px-3 py-2 text-sm font-bold text-white rounded hover:underline" activeClassName="underline">
           SCYLLA ZELUS
         </NavLink>
         <NavLink to="/shop-men" className="px-3 py-2 text-sm font-bold text-white rounded hover:underline" activeClassName="underline">
@@ -117,7 +117,7 @@ function NavBar() {
           <NavLink to="/denim" className="block px-4 py-2 font-bold text-black border-b border-gray-300" activeClassName="bg-gray-200">
             DENIM
           </NavLink>
-          <NavLink to="/scylla-zelus" className="block px-4 py-2 font-bold text-black border-b border-gray-300" activeClassName="bg-gray-200">
+          <NavLink to="/scylla" className="block px-4 py-2 font-bold text-black border-b border-gray-300" activeClassName="bg-gray-200">
             SCYLLA ZELUS
           </NavLink>
           <NavLink to="/shop-men" className="block px-4 py-2 font-bold text-black border-b border-gray-300" activeClassName="bg-gray-200">

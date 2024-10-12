@@ -3,10 +3,12 @@ import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCart from './ShoppingCart';
 import SignInRightsidePanel from '../SignInRightsidePanel/SignInRightsidePanel';
+import SearchPannel from '../SearchPannel/SearchPannel';
 
 function Header() {
     const [isCartOpen, setCartOpen] = useState(false);
     const [isSignInOpen, setSignInOpen] = useState(false); // State for Sign In panel
+    const [isSearchOpen, setSearchOpen] = useState(false); // State for Search Panel
 
     const toggleCart = () => {
         setCartOpen(!isCartOpen);
@@ -14,6 +16,15 @@ function Header() {
 
     const toggleSignIn = () => {
         setSignInOpen(!isSignInOpen);
+    };
+
+    const handleFocus = () => {
+        setSearchOpen(true);
+    };
+
+    const handleBlur = () => {
+        // Delay closing to prevent immediate closing when switching between input and panel
+        setTimeout(() => setSearchOpen(false), 200);
     };
 
     return (
@@ -36,15 +47,19 @@ function Header() {
                             </div>
                             <span className="text-[12px] font-medium tracking-wide text-[#323232]">EN</span>
                         </div>
+                        {/* Search Bar */}
                         <div className="relative">
                             <input
                                 type="text"
                                 placeholder="Search..."
                                 className="border-b-2 px-3 py-2 text-sm bg-[#FAFAFA]"
+                                onFocus={handleFocus}
+                                onBlur={handleBlur} // Close when focus is lost
                             />
                             <button className="absolute inset-y-0 right-0 flex items-center pr-3">
                                 <SearchIcon className="text-black" />
                             </button>
+                            {isSearchOpen && <SearchPannel />}
                         </div>
                     </div>
 
