@@ -62,10 +62,10 @@ const ProductCard = ({ image, hoverImage, brand, description, price, colors, isN
 
       {/* Product Details */}
       <div className="flex flex-col items-center justify-center w-full p-2">
-        <h2 className="mb-1 text-xs text-gray-400 uppercase">{brand}</h2>
+        <h2 className="font-medium text-gray-500 text-sm uppercase pb-2">{brand}</h2>
 
         {/* Description (truncated after 2 lines) */}
-        <p className="mb-2 overflow-hidden text-base text-black line-clamp-2 text-ellipsis">
+        <p className="mb-2 overflow-hidden text-black text-sm line-clamp-2 text-ellipsis">
           {description}
         </p>
 
